@@ -1,0 +1,185 @@
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+hr {
+  border: 0;
+  clear: both;
+  display: block;
+  width: 100%;
+  background-color:#7D97AD;
+  height: 2px;
+  margin-bottom: 20px;
+}
+
+/*
+Defining the Gridbox
+*/
+.grid {
+    margin: 0 auto;
+    max-width: 900px;
+    width: 100%;
+}
+
+.row {
+    max-width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.col-1 {
+    width: 8.33%;
+}
+
+.col-2 {
+    width: 16.66%;
+}
+
+.col-3 {
+    width: 25%;
+}
+
+.col-4 {
+    width: 33.33%;
+}
+
+.col-5 {
+    width: 41.66%;
+}
+
+.col-6 {
+    width: 50%;
+}
+
+.col-7 {
+    width: 58.33%;
+}
+
+.col-8 {
+    width: 66.66%;
+}
+
+.col-9 {
+    width: 75%;
+}
+
+.col-10 {
+    width: 83.33%;
+}
+
+.col-11 {
+    width: 91.66%;
+}
+
+.col-12 {
+    width: 100%;
+}
+
+/*
+Styling Text
+*/
+.subtitle-text {
+    font-family: "Lato", sans-serif;
+    color: #2D3C49;
+    text-transform: uppercase;
+}
+
+.faded-text {
+    font-family: "Lato", sans-serif;
+    color: #7D97AD;
+    text-transform: capitalize;
+    margin-left: 10px;
+}
+
+.title-text {
+    font-family: "Lato", sans-serif;
+    font-weight: 100;
+    font-size: 40px;
+    color: #2D3C49;
+    text-transform: uppercase;
+    margin-bottom: 0;
+}
+
+.lowercase-text {
+    text-transform: lowercase;
+}
+
+/*
+Styling Images
+*/
+.logo {
+    margin: 10px;
+}
+
+.image-style {
+    border: 1px solid #CCCCCC;
+}
+
+.img-responsive {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+/*
+Styling Grids
+*/
+.right-align {
+    text-align: right;
+    padding-left: 10px;
+}
+
+.left-align {
+    text-align: left;
+    padding-right: 10px;
+}
+
+.center-align {
+    text-align: center;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+/*
+Media Queries
+*/
+@media only screen and (min-width: 453px) and (max-width: 750px)  {
+    .col-4 {
+        width: 50%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+@media only screen and (max-width: 533px) {
+    .col-5 {
+        width: 100%;
+        display: block;
+    }
+    .col-5 img {
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .col-7 {
+        width: 100%;
+        display: block;
+        text-align: center;
+    }
+}
+@media only screen and (max-width: 452px)  {
+    .col-4 {
+        width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center;
+    }
+    .col-4 img {
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .col-12 {
+        text-align: center;
+    }
+}
